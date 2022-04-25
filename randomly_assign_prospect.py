@@ -57,4 +57,12 @@ random_prospects = random.sample(prospects, len(fantasy_finish_place))
 for i, team in enumerate(fantasy_finish_place):
     prospect = random_prospects[i]
     table_entries.append([team, prospect])
+# FTW 
+#    for team in fantasy_finish_place:
+#    if team == 'Weekend Warriors (Chris)':
+#        prospect = 'Aidan Hutchinson (1)'
+#        table_entries.append([team, prospect])
+#    else:
+#        prospect = random.sample(prospects[1:], 1)[0]
+#        table_entries.append([team, prospect])
 print(tabulate(table_entries, headers=["Team Name", "Prospect"]))
