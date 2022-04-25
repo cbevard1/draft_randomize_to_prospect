@@ -53,7 +53,8 @@ fantasy_finish_place = [
 ]
 
 table_entries = []
-for team in fantasy_finish_place:
-    prospect = random.sample(prospects, 1)[0]
+random_prospects = random.sample(prospects, len(fantasy_finish_place))
+for i, team in enumerate(fantasy_finish_place):
+    prospect = random_prospects[i]
     table_entries.append([team, prospect])
 print(tabulate(table_entries, headers=["Team Name", "Prospect"]))
